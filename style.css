@@ -1,0 +1,43 @@
+/* Terminal-style theme */
+body {
+  background-color: #000; /* Pure black */
+  color: #00ffff; /* Cyan text */
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+.terminal {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ascii-art {
+  color: #00ffff;
+  font-size: 14px;
+  white-space: pre;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.content {
+  border-top: 1px solid #00ffff44;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+
+  .content::after {
+    content: "_";
+    animation: blink 1s infinite step-start;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+a {
+    color: cadetblue;
+}
